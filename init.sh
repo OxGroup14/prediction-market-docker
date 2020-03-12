@@ -1,2 +1,2 @@
 #!/bin/bash
-git clone git@github.com:OxGroup14/prediction-market-aea.git
+git clone https://github.com/OxGroup14/prediction-market-aea.git
