@@ -1,8 +1,16 @@
-version: '3'
+version: '3.2'
 services:
-  fetch:
-    container_name: fetch
+  fetch-oef:
+    container_name: fetch-oef
     build:
-      context: ./
+      context: ./prediction-market-oef
       dockerfile: ./Dockerfile
-    image: aea_fetch:latest
+    volumes:
+      - type: bind
+        source: /var/run/docker.sock
+        target: /var/run/docker.sock
+  fetch-aea:
+    container_name: fetch-aea
+    build:
+      context: ./prediction-market-aea
+      dockerfile: ./Dockerfile
