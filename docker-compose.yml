@@ -9,6 +9,8 @@ services:
       - type: bind
         source: /var/run/docker.sock
         target: /var/run/docker.sock
+    ports:
+      - "3333:10000"
   fetch-aea:
     container_name: fetch-aea
     build:
