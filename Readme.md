@@ -7,4 +7,5 @@ This Repo is designed purely to be the docker wrapper around the rest of the pro
 - Install docker and docker-compose
 - Clone this repo
 - Run init.sh
+- Run docker-compose build
 - Run docker-compose up
